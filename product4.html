@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 1</title>
+    <link rel="stylesheet" href="css/product.css">
+    <style>
+        div {
+            margin-top:70px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href = "index.html">
+            <img src="images/ikea-logo.png" alt="IKEA 로고" id="logo"></a>
+        
+            <nav>
+                <ul>
+                    <li><a href="brand.html">브랜드 소개</a></li>
+                    <li><a href="features.html">비전과 핵심가치</a></li>
+                    <li><a href="shopping.html">쇼핑</a></li>
+                    <li><a href="qa.html">고객서비스</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div class="product-gallery">
+            <div class="thumbnails">
+                <img src="images/product4.png" alt="Thumbnail 1" onclick="changeImage('images/product4.png')">
+                <img src="images/product4-1.png" alt="Thumbnail 2" onclick="changeImage('images/product4-1.png')">
+                <img src="images/product4-2.png" alt="Thumbnail 3" onclick="changeImage('images/product4-2.png')">
+                <img src="images/product4-3.png" alt="Thumbnail 4" onclick="changeImage('images/product4-3.png')">
+            </div>
+            <div class="main-image">
+                <img src="images/product4.png" alt="Main Image" id="mainImage">
+            </div>
+            <div class="product-details">
+        <h1>BAGGBODA 바그보다</h1>
+        <h3>₩89,900</h3>
+        <form action="order.html">
+            <label for="quantity"></label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button type="submit">주문하기</button>
+        </form>
+    </div>
+</div> 
+        <p>이 커피테이블은 카린 모브링(Karin Mobring)의 작품으로, 1971년 IKEA의 카탈로그에 실린 제품입니다. 당시 CROMI 크로미라는 멋진 이름으로 출시되었어요. 단순하고 세련된 디자인을 갖춘 대표작이 Nytillverkad 뉘틸베르카드 컬렉션에서 새롭게 재해석되었습니다.</p>
+        
+        <div>
+            <h3>제품 설명</h3>
+            <P>쿠션형 의자 시트가 체중을 고르게 분산시켜 주고 엉덩이뼈에 가해지는 압력을 줄여주기 때문이에요.</P>
+            <p>메탈 하부프레임 덕분에 의자가 잘 움직이지 않아요.</p>
+            <p>이 커버는 부드러운 폴리에스테르 패브릭인 토네루드로 만들었어요. 여기에 펠트의 느낌과 투톤 멜란지 효과를 더했습니다.</p>
+        </div>
+        <h4>디자이너</h4>
+        <p>Willy Chong</p>
+    </main>
+    <footer>
+        <img src="images/ikea-bottom.png" alt="IKEA 로고" width="100%">
+    </footer>
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    </script>
+</body>
+</html>
